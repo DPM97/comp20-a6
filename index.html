@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <body>
   <h1>Calculate Amicability</h1>
   <form id="form1">
@@ -32,27 +31,23 @@
     document.getElementById('mainBody').innerHTML += ` = ${s2}`
 
     if (s1 == n2 && s2 == n1) {
-      document.getElementById('mainBody').innerHTML += 
+      document.getElementById('mainBody').innerHTML +=
         '<h3>These numbers are amicable!</h3>'
     } else {
-      document.getElementById('mainBody').innerHTML += 
+      document.getElementById('mainBody').innerHTML +=
         '<h3>These numbers are not amicable!</h3>'
     }
   })
 
   const display = () => {
-    document.getElementById('mainBody').innerHTML += 
+    document.getElementById('mainBody').innerHTML +=
       `<h3>Number 1: ${document.getElementById('num1').value}</h3>`
     document.getElementById('mainBody').innerHTML +=
       `<h3>Number 2: ${document.getElementById('num2').value}</h3><br/>`
   }
 
   const isFactor = (num, posFactor) => {
-    if (num % posFactor == 0) {
-      console.log(posFactor)
-      return true
-    }
-    return false
+    return (num % posFactor == 0) ? true : false
   }
 
   const showArray = (arr) => {
