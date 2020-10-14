@@ -1,0 +1,18 @@
+1. Identify three differences and three similarities between C++ and Javascript
+Differences:
+  - javascript isnt strictly typed
+  - javascript is ALOT slower
+  - javascript is a "scripting" language - thus interpreted on the fly, not 
+    compiled
+Similarities:
+  - functions can be defined in a similar syntax to that of c++... The overall
+    syntax is loosely related (atleast closer than something like python).
+  - vars still need to have some sort of type whether it be var, const, or let..
+  - they can both be used as backend languages. JS in the flavor of Node, and
+    c++ out of the box.
+
+2. What is your opinion of Javascript as a programming language?
+  - Honestly it is my favorite language apart from the absense of types. However,
+    Typescript is a fantastic framework for writingly strictly-typed javascript
+    so I usually just use that. The TS enviroment is kind of a pain to set up 
+    for small projects/scripts, though.
