@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <form id="form1">
+    <textarea id='text1'>
+      
+    </textarea>
+    <button type="submit" id="submit_btn">-></button>
+    <textarea id='text2'>
+      
+    </textarea>
+  </form>
+  <div id="mainBody"></div>
+</body>
+<script>
+  document.getElementById('form1').addEventListener('submit', (e) => {
+    e.preventDefault();
+    let btn = document.getElementById('submit_btn').innerText
+    console.log(btn)
+    if (btn === '->') {
+      let value = document.getElementById('text1').value
+      document.getElementById('text2').value = value;
+      document.getElementById('text1').value = ''
+    } else {
+      let value = document.getElementById('text2').value
+      document.getElementById('text1').value = value;
+      document.getElementById('text2').value = ''
+    }
+    swapBtn(btn);
+  })
+
+  const swapBtn = (value) => {
+    if (value === '->') {
+      document.getElementById('submit_btn').innerText = '<-'
+    } else {
+      document.getElementById('submit_btn').innerText = '->'
+    }
+  }
+</script>
+
+</html>
